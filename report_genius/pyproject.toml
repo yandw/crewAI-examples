@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "report-genius"
+version = "0.1.0"
+description = "AI Crew for collaborative report generation"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+crewai = "^0.134.0"
+python-dotenv = "^1.0.0"
+langchain-openai = "^0.0.5"
+langchain-community = "^0.0.16"
+pyyaml = "^6.0.1"
+typing-extensions = "^4.9.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+report-genius = "report_genius.main:run"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

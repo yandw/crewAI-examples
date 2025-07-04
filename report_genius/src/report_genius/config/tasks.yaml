@@ -1,0 +1,47 @@
+# Tasks configuration for Report Genius
+
+- description: |
+    简要研究主题："{topic}"。
+    考虑报告类型：{report_type}
+    目标受众：{audience}
+    特殊要求：{special_requirements}
+    收集关于该主题的关键信息。
+  expected_output: |
+    包含主题关键事实的简短研究摘要。
+  agent: researcher
+  async_execution: false
+
+- description: |
+    简要分析关于主题的研究："{topic}"。
+    考虑报告类型：{report_type}
+    目标受众：{audience}
+    特殊要求：{special_requirements}
+    提供2-3个关键见解。
+  expected_output: |
+    包含2-3个关于主题的关键见解的简短分析。
+  agent: analyst
+  async_execution: false
+
+- description: |
+    创建关于主题的简短报告："{topic}"。
+    报告类型：{report_type}
+    目标受众：{audience}
+    长度：{length}
+    特殊要求：{special_requirements}
+    保持简洁和重点突出。
+  expected_output: |
+    包含引言、要点和结论的简短报告。
+  agent: writer
+  async_execution: false
+
+- description: |
+    快速审查关于主题的报告："{topic}"。
+    报告类型：{report_type}
+    目标受众：{audience}
+    长度：{length}
+    特殊要求：{special_requirements}
+    只关注关键问题。
+  expected_output: |
+    准备交付的最终简洁报告。
+  agent: editor
+  async_execution: false
